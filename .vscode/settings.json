@@ -1,3 +1,6 @@
 {
-    "livePreview.defaultPreviewPath": "d:\\Web Designing\\index.html"
+    "livePreview.defaultPreviewPath": "d:\\Web Designing\\index.html",
+    "zenMode.hideActivityBar": false,
+    "editor.wordWrap": "on",
+    "python.formatting.provider": "black"
 }

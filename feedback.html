@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href=" https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css " rel="stylesheet">
-  <title>Web Designing</title>
+  <title>Feedback</title>
 </head>
 
 <body>
@@ -27,33 +27,52 @@
         <a class="mr-5 hover:text-gray-900" href="index.html" rel="noopener noreferrer">Home</a>
         <a class="mr-5 hover:text-gray-900" href="about.html" rel="noopener noreferrer">About</a>
         <a class="mr-5 hover:text-gray-900" href="assignment.html" rel="noopener noreferrer">Assignment</a>
-        <a class="mr-5 hover:text-gray-900" href="feedback.html" rel="noopener noreferrer">Feedback</a>
       </nav>
-      <!---IU Button Starts Here-->
-      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
-          href="https://iul.ac.in" rel="noopener noreferrer" target="_blank">Integral University</a>
-          <!---Button SVG-->
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+          href="https://iul.ac.in" rel="noopener noreferrer" target="_blank">Intergal University</a>
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-        
       </button>
     </div>
   </header>
-  <!----External CSS Config Starts Here-->
-  <section id="sec-index" class="text-gray-600 body-font">
+  <section id="feedback" class="text-gray-600 body-font relative">
     <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-        <div class="sm:w-1/2 mb-10 px-4">
-          <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="IUL" class="object-cover object-center h-full w-full" src="images/bg.png">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Feedback</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">A feedback would be much appreciated &#128522;</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
           </div>
-        </div>
-        <div class="sm:w-1/2 mb-10 px-4">
-          <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="IUL" class="object-cover object-center h-full w-full" src="images/bg.png">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
           </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button
+              class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Here
+              you go!</button>
+          </div>
+
         </div>
       </div>
     </div>
@@ -92,4 +111,5 @@
     </div>
   </footer>
 </body>
+
 </html>

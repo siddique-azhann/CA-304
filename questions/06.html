@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Designing Concepts">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mohd Azhan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 06</title>
+    <!---Styling-->
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #c0c0c0;
+        }
+
+        table {
+            font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-collapse: collapse;
+            border-color: black;
+            border-spacing: 0;
+            border: 2px solid rgb(0, 0, 0);
+            float: left;
+            margin: 20px;
+        }
+
+        th,
+        td,
+        tr {
+            text-align: center;
+            padding: 12px;
+            word-spacing: 0;
+        }
+
+        sub {
+            vertical-align: sub text-bottom;
+            font-size: x-small;
+        }
+    </style>
+</head>
+
+<body>
+    <!---Home Button-->
+    <h4><a href="/index.html">Home</a></h4>
+    <!---Table - 01-->
+    <div class="t1">
+        <table border="value">
+            <thead>
+                <tr>
+                    <th colspan="9">
+                        <h1>Time Table</h1>BCA - III<sup>rd</sup> Year | Group - B
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>09:00 - 09-50</th>
+                    <th>09:50 - 10:40</th>
+                    <th>10:40 - 11:30</th>
+                    <th>11:30 - 12:20</th>
+                    <th>12:20 - 01:30</th>
+                    <th>01:30 - 02:20</th>
+                    <th>02:20 - 03:10</th>
+                    <th>03:10 - 04:00</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Monday</th>
+                    <td rowspan="2">CA - 303<br><sub>FLT - 01</sub></td>
+                    <td rowspan="2">CA - 301<br><sub>FLT - 01</sub></td>
+                    <td rowspan="2"></td>
+                    <td>CA - 307<br><sub>BNLT - 02</sub></td>
+                    <td rowspan="15"></td>
+                    <td colspan="3">CA - 311<br><sub>CSE - 02</sub></td>
+                </tr>
+                <tr>
+                    <td>CA - 308<br><sub>LT - 08</sub></td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Tuesday</th>
+                    <td>CA - 307<br><sub>BNLT - 01</sub></td>
+                    <td colspan="2" rowspan="2">CA - 302<br><sub>LT - 13</sub></td>
+                    <td rowspan="2">CA - 304<br><sub>LT - 13</sub></td>
+                    <td colspan="3">CA 310<br><sub>CA - 07</sub></td>
+
+                </tr>
+                <tr>
+                    <td>CA - 308<br><sub>LT - 13</sub></td>
+                    <td></td>
+                    <td colspan="2">CA - 312<br><sub>CA - 06</sub></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Wednesday</th>
+                    <td colspan="3"></td>
+                    <td rowspan="2">CA - 302<br><sub>LT - 13</sub></td>
+                    <td rowspan="2">CA - 304<br><sub>BNLT - 10</sub></td>
+                    <td rowspan="2"> CA - 301<br><sub>BNLT - 10</sub></td>
+                    <td rowspan="2"> CA - 303<br><sub>BNLT - 10</sub></td>
+                </tr>
+                <tr>
+                    <td colspan="3">CA - 310<br><sub>CA - 07</sub></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Thursday</th>
+                    <td>CA - 307<br><sub>BNLT - 10</sub></td>
+                    <td rowspan="2">PPP (Soft SKill)<br><sub>FLT - 01</sub></td>
+                    <td rowspan="2">CA - 301<br><sub>BNLT - 10</sub></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">CA - 302<br><sub>LT - 12</sub></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">PPP (APTI)<br><sub>BNLT - 09</sub></td>
+                </tr>
+                <tr>
+                    <td>CA - 308<br><sub>LT - 13</sub></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Friday</th>
+                    <td rowspan="2">CA - 304<br><sub>BNLT - 07</sub></td>
+                    <td></td>
+                    <td colspan="2">CA - 312<br><sub>CA - 06</sub></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2" colspan="2">CA - 303<br><sub>BNLT - 10</sub></td>
+                </tr>
+                <tr>
+                    <td colspan="3">CA - 311<br><sub>CA - 01</sub></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Saturday</th>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">CA - 304<br><sub>BNLT - 02</sub></td>
+                    <td rowspan="2">CA - 301<br><sub>BNLT - 02</sub></td>
+                    <td>CA 307<br><sub>BNLT - 02</sub></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td>CA - 308<br><sub>BNLT - 08</sub></td>
+                </tr>
+            </tbody>
+        </table><br>
+    </div>
+    <!---Table - 02-->
+    <div class="t2">
+        <table border="value">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Course Co-ordinator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CA - 301</td>
+                    <td>Computer Graphics and Multimedia Application</td>
+                    <td>Dr. Mohd Waris Khan</td>
+                </tr>
+                <tr>
+                    <td>CA - 302</td>
+                    <td>Unix and Shell Programming</td>
+                    <td>Dr. Mohd Muqeem</td>
+                </tr>
+                <tr>
+                    <td>CA - 303</td>
+                    <td>Data Communication and Computer Networks</td>
+                    <td>Dr. Mohd Suhaib Kidwai</td>
+                </tr>
+                <tr>
+                    <td>CA - 304</td>
+                    <td>Web Designing Concepts</td>
+                    <td>Ms. Nashra Javed</td>
+                </tr>
+                <tr>
+                    <td>CA - 307</td>
+                    <td>Image Processing</td>
+                    <td>Qaazi Saeed Ahmad</td>
+                </tr>
+                <tr>
+                    <td>CA - 308</td>
+                    <td>Elementary Algorithm</td>
+                    <td>Md. Khalid Jamal</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">CA - 310</td>
+                    <td rowspan="2">Unix and Shell Programming Lab</td>
+                    <td>Syed Adnan Afaq</td>
+                </tr>
+                <tr>
+                    <td>Ms. Gausiya Yasmeen</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">CA - 311</td>
+                    <td rowspan="2">Web Designing Lab</td>
+                    <td>Ms. Nashra Javed</td>
+                </tr>
+                <tr>
+                    <td>Ms. Abida Khanam</td>
+                </tr>
+                <tr>
+                    <td>CA - 312</td>
+                    <td>Computer Graphics Lab</td>
+                    <td>Dr. Faizan Ahmad</td>
+                </tr>
+                <tr>
+                    <td>PPP</td>
+                    <td>Interpersonal Skills</td>
+                    <td>CCG&D</td>
+                </tr>
+            </tbody>
+    </div>
+    </table><br>
+
+    <!---Table - 03-->
+
+    <div class="t3">
+        <table border="value">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Lab Scedule
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Day</th>
+                    <th>Group - 01</th>
+                    <th>Group - 02</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>CA - 311</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>CA - 310</td>
+                    <td>CA - 312</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td></td>
+                    <td>CA - 310</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>CA - 312</td>
+                    <td>CA - 311</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
