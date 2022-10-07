@@ -1,3 +1,9 @@
+/* Scrollbar is hidden for all pages*/
+
+* ::-webkit-scrollbar {
+    display: none;
+  }
+
 /* Bg index home */
 
 #sec-index {
@@ -15,3 +21,4 @@
     background-color: #fff;
     border: 5px solid white;
 }
+
