@@ -42,24 +42,23 @@
 
         .container {
             font-family: 'Courier New', Courier, monospace;
-            border-radius: 5px;
+            border-radius: 10px;
             background-color: #ead9eb;
             padding: 20px;
         }
 
-        .col-25 {
+        .text {
             float: left;
             width: 25%;
-            margin-top: 6px;
+            margin-top: 10px;
         }
 
-        .col-75 {
+        .text-box {
             float: left;
             width: 75%;
-            margin-top: 6px;
+            margin-top: 10px;
         }
 
-        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
@@ -68,8 +67,8 @@
 
         @media screen and (max-width: 600px) {
 
-            .col-25,
-            .col-75,
+            .text,
+            .text-box,
             input[type=submit] {
                 width: 100%;
                 margin-top: 0;
@@ -83,51 +82,51 @@
         <h2>Student Interest Form</h2>
         <form action="/action_page.php">
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="fname">First Name</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <input type="text" id="fname" name="firstname" placeholder="Your first name..">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="lname">Last Name</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="subject">Address</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <textarea id="address" name="subject" placeholder="Your address..."
                         style="height:80px"></textarea>
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="fname">Favorite Subject</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <input type="text" id="subject" name="firstname" placeholder="Your favorite subject...">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="fname">Favorite Movie</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <input type="text" id="movie" name="firstname" placeholder="Your favorite movie...">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="text">
                     <label for="fname">Favorite Music</label>
                 </div>
-                <div class="col-75">
+                <div class="text-box">
                     <input type="text" id="music" name="firstname" placeholder="Your favorite music...">
                 </div>
             </div>

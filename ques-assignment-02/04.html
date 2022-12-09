@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 03</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        input[type=number] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=email]{
+        width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=password]{
+        width: 100%;
+            padding: 12px;
+            border: 1px solid;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #9c18a8;
+            color: white;
+            padding: 12px 20px;
+            border: 1px solid;
+            border-radius: 4px;
+            resize: vertical;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+            width: 75%;
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #e523f7;
+        }
+
+        .container {
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+            background-color: #ead9eb;
+            padding: 20px;
+        }
+
+        .text {
+            float: left;
+            width: 25%;
+            margin-top: 10px;
+        }
+
+        .text-box {
+            float: left;
+            width: 75%;
+            margin-top: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .text,
+            .text-box,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="text">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="text-box">
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="text-box">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="fname">Gender</label>
+                </div>
+                <div class="text-box">
+                    <input type="radio" name="radio" title="gender"> Male <input type="radio" name="radio" id="radio"
+                        title="gender"> Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="fname">Sexuality</label>
+                </div>
+                <div class="text-box">
+                    <input type="checkbox" name="radio" title="sexuality"> Straight <input type="checkbox" name="radio"
+                        title="sexuality"> Bi <input type="checkbox" name="radio" title="sexuality"> Gay <input
+                        type="checkbox" name="radio" title="sexuality"> Other
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="fname">Phone</label>
+                </div>
+                <div class="text-box">
+                    <input type="number" id="phone" name="firstname" placeholder="Your phone no...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="fname">Email</label>
+                </div>
+                <div class="text-box">
+                    <input type="email" id="email" name="firstname" placeholder="Your e-mail id...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="fname">Password</label>
+                </div>
+                <div class="text-box">
+                    <input type="password" id="password" name="firstname" placeholder="Create a password...">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
