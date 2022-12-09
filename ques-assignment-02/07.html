@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 07</title>
+    <script type="text/javascript">
+        var c = ["white", "yellow"];
+        var currentColorIndex = 0;
+
+        function changeColor() {
+            document.bgColor = c[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % c.length;
+            setTimeout(changeColor, 5000);
+        }
+
+    </script>
+
+<body onload="changeColor()">
+    <h3>This page's background color change after 5 seconds.</h3>
+</body>
+
+</html>
